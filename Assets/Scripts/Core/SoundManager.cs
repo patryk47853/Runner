@@ -46,7 +46,7 @@ public class SoundManager : MonoBehaviour
         currentVolume += change;
 
         //Check if we reached the maximum or minimum value
-        if (currentVolume > 1)
+        if (currentVolume > 1) 
             currentVolume = 0;
         else if (currentVolume < 0)
             currentVolume = 1;
