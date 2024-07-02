@@ -339,6 +339,8 @@ MonoBehaviour:
   previousRoom: {fileID: 402985972}
   nextRoom: {fileID: 345682387}
   cam: {fileID: 519420030}
+  nextLevelIndex: 0
+  menuSceneIndex: 0
 --- !u!61 &16408926
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6210,6 +6212,66 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &570862564
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6235141898098784502, guid: 6ef097aaca1c23643a506c6c573d6826, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 47.85843
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235141898098784502, guid: 6ef097aaca1c23643a506c6c573d6826, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.5417595
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235141898098784502, guid: 6ef097aaca1c23643a506c6c573d6826, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235141898098784502, guid: 6ef097aaca1c23643a506c6c573d6826, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235141898098784502, guid: 6ef097aaca1c23643a506c6c573d6826, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235141898098784502, guid: 6ef097aaca1c23643a506c6c573d6826, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235141898098784502, guid: 6ef097aaca1c23643a506c6c573d6826, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235141898098784502, guid: 6ef097aaca1c23643a506c6c573d6826, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235141898098784502, guid: 6ef097aaca1c23643a506c6c573d6826, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235141898098784502, guid: 6ef097aaca1c23643a506c6c573d6826, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235141898098784503, guid: 6ef097aaca1c23643a506c6c573d6826, type: 3}
+      propertyPath: m_Name
+      value: Spikes (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 8333387076662102418, guid: 6ef097aaca1c23643a506c6c573d6826, type: 3}
+    - {fileID: 6473288243126505721, guid: 6ef097aaca1c23643a506c6c573d6826, type: 3}
+    - {fileID: 2875196465479130269, guid: 6ef097aaca1c23643a506c6c573d6826, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6ef097aaca1c23643a506c6c573d6826, type: 3}
 --- !u!1 &573855855
 GameObject:
   m_ObjectHideFlags: 0
@@ -7100,6 +7162,8 @@ MonoBehaviour:
   previousRoom: {fileID: 1551478790}
   nextRoom: {fileID: 402985972}
   cam: {fileID: 519420030}
+  nextLevelIndex: 0
+  menuSceneIndex: 0
 --- !u!61 &632366021
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13209,6 +13273,8 @@ MonoBehaviour:
   previousRoom: {fileID: 345682387}
   nextRoom: {fileID: 1345861223}
   cam: {fileID: 0}
+  nextLevelIndex: 0
+  menuSceneIndex: 0
 --- !u!61 &1060918265
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24481,6 +24547,8 @@ MonoBehaviour:
   previousRoom: {fileID: 1345861223}
   nextRoom: {fileID: 345682387}
   cam: {fileID: 519420030}
+  nextLevelIndex: 0
+  menuSceneIndex: 0
 --- !u!61 &2095603950
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25792,3 +25860,4 @@ SceneRoots:
   - {fileID: 1394697471}
   - {fileID: 1113890108}
   - {fileID: 1057108755}
+  - {fileID: 570862564}
