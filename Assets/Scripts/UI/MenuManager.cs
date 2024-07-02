@@ -13,6 +13,7 @@ public class MenuManager : MonoBehaviour
     {
         ChangePosition(0);
     }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.UpArrow))
@@ -20,7 +21,7 @@ public class MenuManager : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.DownArrow))
             ChangePosition(1);
 
-        if (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetButtonDown("Submit"))
+        if (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetButtonDown("Submit") || Input.GetKeyDown(KeyCode.P))
             Interact();
     }
 
@@ -38,10 +39,12 @@ public class MenuManager : MonoBehaviour
 
         AssignPosition();
     }
+
     private void AssignPosition()
     {
         arrow.position = new Vector3(arrow.position.x, buttons[currentPosition].position.y);
     }
+
     private void Interact()
     {
         SoundManager.instance.PlaySound(interactSound);

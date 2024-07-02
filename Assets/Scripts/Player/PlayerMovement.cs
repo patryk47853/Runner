@@ -54,8 +54,6 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("run", horizontalInput != 0);
         anim.SetBool("grounded", isGrounded());
 
-        print(onWall());
-
         //Jump
         if (Input.GetKeyDown(KeyCode.Space))
             Jump();
@@ -122,7 +120,7 @@ public class PlayerMovement : MonoBehaviour
         body.AddForce(new Vector2(-Mathf.Sign(transform.localScale.x) * wallJumpX, wallJumpY));
         wallJumpCooldown = 0;
     }
-    
+
     private bool isGrounded()
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down,
