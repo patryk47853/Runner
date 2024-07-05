@@ -6592,6 +6592,7 @@ GameObject:
   m_Component:
   - component: {fileID: 599085999}
   - component: {fileID: 599086000}
+  - component: {fileID: 599086001}
   m_Layer: 0
   m_Name: Start (Idle)
   m_TagString: Untagged
@@ -6668,6 +6669,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &599086001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599085998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dce6035b414494413b6f39d36fb132e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneBuildIndex: 0
 --- !u!1 &603624658
 GameObject:
   m_ObjectHideFlags: 0
@@ -7968,6 +7982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5857649c4d19c73478ef0f854996a778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingScreen: {fileID: 0}
   gameOverScreen: {fileID: 1840033165}
   gameOverSound: {fileID: 8300000, guid: 363a938ca73b3584db2b4669a1d37e27, type: 3}
   pauseScreen: {fileID: 555522150}
@@ -13149,6 +13164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1057108755}
   - component: {fileID: 1057108754}
+  - component: {fileID: 1057108756}
   m_Layer: 9
   m_Name: Wall1 (6)
   m_TagString: Untagged
@@ -13225,6 +13241,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1057108756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057108753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dce6035b414494413b6f39d36fb132e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneBuildIndex: 0
 --- !u!1 &1060918262
 GameObject:
   m_ObjectHideFlags: 0
@@ -17431,6 +17460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1394697471}
   - component: {fileID: 1394697470}
+  - component: {fileID: 1394697472}
   m_Layer: 9
   m_Name: Wall1 (5)
   m_TagString: Untagged
@@ -17507,6 +17537,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1394697472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394697469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dce6035b414494413b6f39d36fb132e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneBuildIndex: 0
 --- !u!1 &1395163107
 GameObject:
   m_ObjectHideFlags: 0
@@ -24510,6 +24553,7 @@ GameObject:
   - component: {fileID: 2095603948}
   - component: {fileID: 2095603950}
   - component: {fileID: 2095603949}
+  - component: {fileID: 2095603951}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -24595,6 +24639,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.6539154, y: 2.361267}
   m_EdgeRadius: 0
+--- !u!114 &2095603951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095603947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dce6035b414494413b6f39d36fb132e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneBuildIndex: 6
 --- !u!1 &2112235744
 GameObject:
   m_ObjectHideFlags: 0
