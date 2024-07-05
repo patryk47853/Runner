@@ -1579,7 +1579,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: BACK TO MENU
+  m_Text: WROC DO MENU
 --- !u!222 &93365382
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7116,7 +7116,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MUSIC
+  m_Text: MUZYKA
 --- !u!222 &529702361
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8913,7 +8913,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: QUIT
+  m_Text: WYJDZ Z GRY
 --- !u!222 &650675160
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12671,7 +12671,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: VOLUME
+  m_Text: DZWIEK
 --- !u!222 &965743988
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13131,7 +13131,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: YOU DIED
+  m_Text: ZGINALES
 --- !u!222 &991723494
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16561,7 +16561,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: RESUME
+  m_Text: WZNOW
 --- !u!222 &1237197858
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17825,7 +17825,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: BACK TO MENU
+  m_Text: WROC DO MENU
 --- !u!222 &1313251803
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18976,7 +18976,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: QUIT
+  m_Text: WYJDZ
 --- !u!222 &1394214854
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24165,7 +24165,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: RESTART
+  m_Text: WZNOW
 --- !u!222 &1837511204
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26060,7 +26060,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PAUSE
+  m_Text: ZATRZYMANO
 --- !u!222 &1982848784
 CanvasRenderer:
   m_ObjectHideFlags: 0

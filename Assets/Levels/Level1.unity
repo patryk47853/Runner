@@ -339,6 +339,8 @@ MonoBehaviour:
   previousRoom: {fileID: 402985972}
   nextRoom: {fileID: 345682387}
   cam: {fileID: 519420030}
+  nextLevelIndex: 0
+  menuSceneIndex: 0
 --- !u!61 &16408926
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1250,7 +1252,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: BACK TO MENU
+  m_Text: WROC DO MENU
 --- !u!222 &93365382
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4087,7 +4089,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MUSIC
+  m_Text: MUZYKA
 --- !u!222 &529702361
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4699,6 +4701,8 @@ MonoBehaviour:
   previousRoom: {fileID: 1551478790}
   nextRoom: {fileID: 402985972}
   cam: {fileID: 519420030}
+  nextLevelIndex: 0
+  menuSceneIndex: 0
 --- !u!61 &632366021
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5001,7 +5005,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: QUIT
+  m_Text: WYJDZ Z GRY
 --- !u!222 &650675160
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5214,6 +5218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5857649c4d19c73478ef0f854996a778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingScreen: {fileID: 0}
   gameOverScreen: {fileID: 1840033165}
   gameOverSound: {fileID: 8300000, guid: 363a938ca73b3584db2b4669a1d37e27, type: 3}
   pauseScreen: {fileID: 555522150}
@@ -7517,7 +7522,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: VOLUME
+  m_Text: DZWIEK
 --- !u!222 &965743988
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7964,7 +7969,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: YOU DIED
+  m_Text: ZGINALES
 --- !u!222 &991723494
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8593,6 +8598,8 @@ MonoBehaviour:
   previousRoom: {fileID: 345682387}
   nextRoom: {fileID: 0}
   cam: {fileID: 0}
+  nextLevelIndex: 0
+  menuSceneIndex: 0
 --- !u!61 &1060918265
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9811,7 +9818,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: RESUME
+  m_Text: WZNOW
 --- !u!222 &1237197858
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10429,7 +10436,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: BACK TO MENU
+  m_Text: WROC DO MENU
 --- !u!222 &1313251803
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14974,7 +14981,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PAUSE
+  m_Text: ZATRZYMANO
 --- !u!222 &1982848784
 CanvasRenderer:
   m_ObjectHideFlags: 0
