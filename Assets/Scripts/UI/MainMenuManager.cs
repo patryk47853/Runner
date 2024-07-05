@@ -49,7 +49,9 @@ public class MainMenuManager : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false;
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false; //Exits play mode (will only be executed in the editor)
+#endif
     }
 
     public void SoundVolume()
