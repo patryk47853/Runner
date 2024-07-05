@@ -8,9 +8,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpPower;
 
     [Header("Coyote Time")] [SerializeField]
-    private float coyoteTime; //How much time the player can hang in the air before jumping
+    private float coyoteTime; //Czas jaki uzytkownik podczas skoku moze przebywac w powietrzu
 
-    private float coyoteCounter; //How much time passed since the player ran off the edge
+    private float coyoteCounter; //Czas jaki uplynal od odskoku z sciany
 
     [Header("Multiple Jumps")] [SerializeField]
     private int extraJumps;
@@ -18,9 +18,9 @@ public class PlayerMovement : MonoBehaviour
     private int jumpCounter;
 
     [Header("Wall Jumping")] [SerializeField]
-    private float wallJumpX; //Horizontal wall jump force
+    private float wallJumpX; //Sila skoku na osi X
 
-    [SerializeField] private float wallJumpY; //Vertical wall jump force
+    [SerializeField] private float wallJumpY; //Sila skoku na osi Y
 
     [Header("Layers")] [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
@@ -44,21 +44,21 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
 
-        //Flip player when moving left-right
+        //Obracanie gracza gdy chodzi lewo/prawo
         if (horizontalInput > 0.01f)
             transform.localScale = Vector3.one;
         else if (horizontalInput < -0.01f)
             transform.localScale = new Vector3(-1, 1, 1);
 
-        //Set animator parameters
+        //Animacje gracza
         anim.SetBool("run", horizontalInput != 0);
         anim.SetBool("grounded", isGrounded());
 
-        //Jump
+        //Skok
         if (Input.GetKeyDown(KeyCode.Space))
             Jump();
 
-        //Adjustable jump height
+        //Dostosowywanie skoku
         if (Input.GetKeyUp(KeyCode.Space) && body.velocity.y > 0)
             body.velocity = new Vector2(body.velocity.x, body.velocity.y / 2);
 
@@ -74,18 +74,18 @@ public class PlayerMovement : MonoBehaviour
 
             if (isGrounded())
             {
-                coyoteCounter = coyoteTime; //Reset coyote counter when on the ground
-                jumpCounter = extraJumps; //Reset jump counter to extra jump value
+                coyoteCounter = coyoteTime; //Resetuj czas bezwladnosci
+                jumpCounter = extraJumps; //Resetuj licznik skokow
             }
             else
-                coyoteCounter -= Time.deltaTime; //Start decreasing coyote counter when not on the ground
+                coyoteCounter -= Time.deltaTime; //Zmniejszanie stanu bezwladnosci gdy gracz nie jest na ziemi
         }
     }
 
     private void Jump()
     {
         if (coyoteCounter <= 0 && !onWall() && jumpCounter <= 0) return;
-        //If coyote counter is 0 or less and not on the wall and don't have any extra jumps don't do anything
+        // Jesli licznik bezwladnosci jest <= 0 i nie jest na scianie to wykonaj return
 
         SoundManager.instance.PlaySound(jumpSound);
 
@@ -97,20 +97,21 @@ public class PlayerMovement : MonoBehaviour
                 body.velocity = new Vector2(body.velocity.x, jumpPower);
             else
             {
-                //If not on the ground and coyote counter bigger than 0 do a normal jump
+                //Jesli gracz nie jest na ziemi i licznik bezwladnosci jest >=0 skocz
                 if (coyoteCounter > 0)
                     body.velocity = new Vector2(body.velocity.x, jumpPower);
                 else
                 {
-                    if (jumpCounter > 0) //If we have extra jumps then jump and decrease the jump counter
+                    //Jesli gracz ma dodatkowe skoki, to skocz i zmniejsz licznik skokow
+                    if (jumpCounter > 0)
                     {
                         body.velocity = new Vector2(body.velocity.x, jumpPower);
                         jumpCounter--;
                     }
                 }
             }
-
-            //Reset coyote counter to 0 to avoid double jumps
+            
+            //Resetuj licznik bezwladnosci, zeby nie moc skakac wielokrotnie bez konca
             coyoteCounter = 0;
         }
     }

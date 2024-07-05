@@ -15,18 +15,19 @@ public class PlayerRespawn : MonoBehaviour
 
     public void RespawnCheck()
     {
-        if (currentCheckpoint == null) 
+        if (currentCheckpoint == null)
         {
             uiManager.GameOver();
             return;
         }
 
-        playerHealth.Respawn(); //Restore player health and reset animation
-        transform.position = currentCheckpoint.position; //Move player to checkpoint location
+        playerHealth.Respawn(); //Odnow zycie gracza
+        transform.position = currentCheckpoint.position; //Przenies zespawnowanego gracza w miejscu checkpointu
 
-        //Move the camera to the checkpoint's room
+        //Skieruj kamere na checkpoint
         Camera.main.GetComponent<CameraController>().MoveToNewRoom(currentCheckpoint.parent);
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Checkpoint")

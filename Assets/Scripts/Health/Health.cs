@@ -3,23 +3,23 @@ using System.Collections;
 
 public class Health : MonoBehaviour
 {
-    [Header ("Health")]
-    [SerializeField] private float startingHealth;
+    [Header("Health")] [SerializeField] private float startingHealth;
     public float currentHealth { get; private set; }
     private Animator anim;
     private bool dead;
 
-    [Header("iFrames")]
-    [SerializeField] private float iFramesDuration;
+    [Header("iFrames")] [SerializeField] private float iFramesDuration;
     [SerializeField] private int numberOfFlashes;
     private SpriteRenderer spriteRend;
 
-    [Header("Components")]
-    [SerializeField] private Behaviour[] components;
+    [Header("Components")] [SerializeField]
+    private Behaviour[] components;
+
     private bool invulnerable;
 
-    [Header("Death Sound")]
-    [SerializeField] private AudioClip deathSound;
+    [Header("Death Sound")] [SerializeField]
+    private AudioClip deathSound;
+
     [SerializeField] private AudioClip hurtSound;
 
     private void Awake()
@@ -28,6 +28,7 @@ public class Health : MonoBehaviour
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
     }
+
     public void TakeDamage(float _damage)
     {
         if (invulnerable) return;
@@ -43,7 +44,7 @@ public class Health : MonoBehaviour
         {
             if (!dead)
             {
-                //Deactivate all attached component classes
+                //Dezaktywuj wzystkie klasy w komponencie
                 foreach (Behaviour component in components)
                     component.enabled = false;
 
@@ -55,10 +56,12 @@ public class Health : MonoBehaviour
             }
         }
     }
+
     public void AddHealth(float _value)
     {
         currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
     }
+
     private IEnumerator Invunerability()
     {
         invulnerable = true;
@@ -70,9 +73,11 @@ public class Health : MonoBehaviour
             spriteRend.color = Color.white;
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
         }
+
         Physics2D.IgnoreLayerCollision(10, 11, false);
         invulnerable = false;
     }
+
     private void Deactivate()
     {
         gameObject.SetActive(false);

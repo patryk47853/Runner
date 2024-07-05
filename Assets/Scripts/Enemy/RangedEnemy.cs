@@ -40,7 +40,7 @@ public class RangedEnemy : MonoBehaviour
     {
         cooldownTimer += Time.deltaTime;
 
-        //Attack only when player in sight?
+        //Atakuj gdy gracz jest w zasiegu
         if (PlayerInSight())
         {
             if (cooldownTimer >= attackCooldown)
