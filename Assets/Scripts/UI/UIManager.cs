@@ -21,7 +21,7 @@ public class UIManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            //If pause screen already active unpause and viceversa
+            //Togglowanie menu pauzy poprzez przycisk 'escape'
             PauseGame(!pauseScreen.activeInHierarchy);
         }
     }
@@ -47,13 +47,13 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    //Quit game/exit play mode if in Editor
+    //Metoda do wychodzenia z gry
     public void Quit()
     {
-        Application.Quit(); //Quits the game (only works in build)
+        Application.Quit(); //Wychodzi z gry (tylko podczas zbuildowanej gry)
 
 #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false; //Exits play mode (will only be executed in the editor)
+        UnityEditor.EditorApplication.isPlaying = false; //Wychodzi z gry (tylko w edytorze Unity)
 #endif
     }
 
